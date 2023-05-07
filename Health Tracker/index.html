@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="HT2.png">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <div class="app-header-logo">
+                <div class="logo">
+                    <h1 class="logo-title">
+                        <span>Health</span>
+                        <span>Tracker</span>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="app-header-mobile">
+                <button class="icon-button large">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
+
+        </header>
+        <div class="app-body">
+            <div class="menu">
+                <div class="app-body-navigation">
+                    <nav class="navigation">
+                        <a href="#">
+                            <i class="ph-browsers"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="index.html">
+                            <i class="ph-check-square"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        <a href="#">
+                            <i class="ph-swap"></i>
+                            <span>Overview</span>
+                        </a>
+                        <a href="#">
+                            <i class="ph-file-text"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="#">
+                            <i class="ph-globe"></i>
+                            <span>settings</span>
+                        </a>
+                    </nav>
+                    <footer class="footer">
+                        <img src="HT2.png" width="40px" height="40px" />
+                        <div>
+                            Health Tracker ©<br />
+
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="app-body-main-content">
+                <section class="service-section">
+                    <h2>Service</h2>
+                    <div class="service-section-header">
+                        <form id="myForm" class="search-field">
+                            <i class="ph-magnifying-glass"></i>
+                            <input style="color: #ffffff;" type="text" id="country" placeholder="Country Name" required>
+                            <button type="submit" value="Get Data" class="flat-button">
+                                Search
+                            </button>
+                        </form>
+
+
+                    </div>
+                    <div class="mobile-only">
+                        <button class="flat-button">
+                            Toggle search
+                        </button>
+                    </div>
+                    <div class="tiles">
+                        <article class="tile">
+                            <div class="tile-header">
+                                <i class="ph-lightning-light"></i>
+                                <h3>
+                                    <span>Covid Data</span>
+                                    <span>Get Covid reports</span>
+                                </h3>
+                            </div>
+                            <a href="covid.html">
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="ph-caret-right-bold"></i>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="tile">
+                            <div class="tile-header">
+                                <i class="ph-fire-simple-light"></i>
+                                <h3>
+                                    <span>Hospitals</span>
+                                    <span>Nearby Hospitals</span>
+                                </h3>
+                            </div>
+                            <a href="hospitals.html">
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="ph-caret-right-bold"></i>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="tile">
+                            <div class="tile-header">
+                                <i class="ph-file-light"></i>
+                                <h3>
+                                    <span>Blood Bank</span>
+                                    <span>Nearby Blood Banks</span>
+                                </h3>
+                            </div>
+                            <a href="#">
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="ph-caret-right-bold"></i>
+                                </span>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="service-section-footer">
+                        <p>All the data updates after refreshing the page...</p>
+                    </div>
+                </section>
+            </div>
+            <div class="app-body-sidebar">
+                <section class="payment-section">
+                    <h2>Total Covid Cases</h2>
+                    <div class="payment-section-header">
+                        <p>Top 3 covid affected States</p>
+                    </div>
+                    <div class="payments">
+                        <div class="payment">
+                            <div class="card green">
+                                <span>Total Confirmed:</span>
+                                <span id="confirmed">
+                                    <!-- Cases 79.8L -->
+                                </span>
+                            </div>
+                            <div class="payment-details">
+                                <h3></h3>
+                                <div>
+                                    <span></span>
+                                    <button class="icon-button">
+                                        <i class="ph-caret-right-bold"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="card olive">
+                                <span>
+                                    Total Recovered:
+                                </span>
+                                <span id="recovered">
+                                    <!-- Cases 79.8L -->
+                                </span>
+                            </div>
+                            <div class="payment-details">
+                                <h3></h3>
+                                <div>
+                                    <span></span>
+                                    <button class="icon-button">
+                                        <i class="ph-caret-right-bold"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="card gray">
+                                <span>
+                                    Total Deaths:
+                                </span>
+                                <span id="deaths">
+                                    <!-- Cases 79.8L -->
+                                </span>
+                            </div>
+                            <div class="payment-details">
+                                <h3></h3>
+                                <div>
+                                    <span></span>
+                                    <button class="icon-button">
+                                        <i class="ph-caret-right-bold"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <p></p>
+                        <div>
+                            <label></label>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="payment-section-footer">
+
+
+                        </button>
+                        <button class="settings-button">
+                            <i class="ph-gear"></i>
+                            <span></span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var myForm = document.getElementById('myForm')
+
+    myForm.addEventListener('submit', function (e) {
+        e.preventDefault()
+
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '26decd2c2amsh21bab54566faf37p117875jsn05f5c5549ccd',
+                'X-RapidAPI-Host': 'google-maps-geocoding.p.rapidapi.com'
+            }
+        };
+
+        fetch('https://google-maps-geocoding.p.rapidapi.com/geocode/json?latlng=40.714224%2C-73.96145&language=en', options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));
+
+    })
+
+</script>
+
+</html>
